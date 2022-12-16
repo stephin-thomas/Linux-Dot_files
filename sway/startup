@@ -1,0 +1,6 @@
+exec dbus-update-activation-environment DISPLAY XAUTHORITY WAYLAND_DISPLAY
+exec wl-paste -t text --watch cliphist store --no-persist
+exec sworkstyle &> /tmp/sworkstyle.log
+exec foot -s
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec sworkstyle &> /tmp/sworkstyle.log
